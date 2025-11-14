@@ -1,0 +1,28 @@
+{
+  "name": "mcp-server-app",
+  "version": "1.0.0",
+  "description": "MCP Server for ChatGPT Apps",
+  "type": "module",
+  "main": "dist/server/index.js",
+  "scripts": {
+    "build": "npm run build:server",
+    "build:server": "tsc -p tsconfig.server.json",
+    "dev": "npm run build && node dist/server/index.js",
+    "start": "node dist/server/index.js"
+  },
+  "keywords": ["mcp", "chatgpt", "apps"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "dotenv": "^16.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}
+
